@@ -1,2 +1,2 @@
 # go-docker-hello-world
-Golang "Hello World!" web server in docker image
+Modern Golang "Hello World!" web server in a docker image
