@@ -31,6 +31,6 @@ Don't be confused by the message
 
 `GO web server is running on http://localhost:80`
 
-if you publish to a host port other than 80, as inside the container it always runs on 8080.
+if you publish to a host port other than 80, as inside the container it always runs on 80.
 
-_From inside a container you cannot figure out to which docker host port a container port is mapped to._ explained here https://stackoverflow.com/questions/32444612/how-to-get-the-mapped-port-on-host-from-a-docker-container#:~:text=From%20inside%20a%20container%20you,container%20port%20is%20mapped%20to.
+_"From inside a container you cannot figure out to which docker host port a container port is mapped to."_ explained here https://stackoverflow.com/questions/32444612/how-to-get-the-mapped-port-on-host-from-a-docker-container#:~:text=From%20inside%20a%20container%20you,container%20port%20is%20mapped%20to.
