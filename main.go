@@ -4,16 +4,12 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
 
 	"github.com/gorilla/mux"
 )
 
 func main() {
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080"
-	}
+	port := "80"
 
 	router := mux.NewRouter()
 	router.HandleFunc("/", hello).Methods("GET")
@@ -22,5 +18,6 @@ func main() {
 }
 
 func hello(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprintln(w, "<h1>Hello World!</h1>")
+	fmt.Fprintln(w, "<h1>Hello, World!</h1>")
+	fmt.Println("hit " + req.URL.String())
 }

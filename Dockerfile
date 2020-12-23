@@ -31,9 +31,6 @@ WORKDIR /bin/
 COPY --from=builder /dist/webserver .
 #COPY --from=builder /usr/local/go/lib/time/zoneinfo.zip /usr/local/go/lib/time/zoneinfo.zip
 
-ARG PORT=8080
-
-ENV PORT=$PORT
-EXPOSE $PORT
+EXPOSE 80
 
 CMD /bin/webserver
